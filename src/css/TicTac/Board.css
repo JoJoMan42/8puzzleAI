@@ -1,0 +1,13 @@
+.board-box {
+    display: grid;
+    gap: 2px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

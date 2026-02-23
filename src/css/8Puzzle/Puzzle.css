@@ -1,0 +1,123 @@
+.body {
+  background-color: #87CEEB;
+}
+
+.puzzle-container {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #87CEEB;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+.board-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: 10px;
+  margin: 20px auto;
+  background-color: #79553A;
+  padding: 12px;
+  border: 4px solid #4A3320;
+  box-shadow: 0 6px 0 #2E1F12;
+}
+
+.puzzle-tile {
+  width: 90px;
+  height: 90px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: 3px solid #388E3C;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  box-shadow: 0 5px 0 #2E7D32;
+}
+
+.puzzle-tile:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #2E7D32;
+}
+
+.puzzle-tile:hover {
+  filter: brightness(1.1);
+}
+
+.puzzle-tile.empty {
+  background-color: #2E1F12;
+  border: 3px solid #1A110A;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.6);
+  cursor: default;
+  color: transparent;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.reset-btn,
+.stats-btn {
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #4b278a;
+  border: 3px solid black;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #3D3D3D;
+  transition: transform 0.08s, filter 0.08s;
+}
+
+.reset-btn:hover,
+.stats-btn:hover {
+  filter: brightness(1.1);
+}
+
+.reset-btn:active,
+.stats-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #3D3D3D;
+}
+
+.stats-box {
+  background-color: #C08D54;
+  padding: 16px;
+  border-radius: 6px;
+  width: 150px;
+  text-align: left;
+  border: 4px solid #825A32;
+  box-shadow: 0 6px 0 #54381C;
+  color: #311E0B;
+  font-weight: bold;
+}
+
+.stats-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-box li {
+  padding: 6px 0;
+  font-size: 16px;
+  border-bottom: 2px solid #A87640;
+}
+
+.stats-box li:last-child {
+  border-bottom: none;
+}
